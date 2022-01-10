@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo ${currentBuild.changeSets}
+                echo "${currentBuild.changeSets}"
             }
         }
         stage('Test') {
